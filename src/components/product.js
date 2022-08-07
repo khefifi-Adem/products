@@ -1,4 +1,8 @@
+import {useState} from "react";
+
 function Product({ category, description, image, price, rating, title }) {
+    const [desc, setDesc] = useState(false);
+    console.log(desc)
     return (
         <div className="product">
             <div className="img-container">
@@ -16,13 +20,20 @@ function Product({ category, description, image, price, rating, title }) {
                      |   {price}$
                     </p>
                 </div>
-                <p className="product-description">
-                    {description}
-                </p>
-
                 <p className="product-rating">
                     {rating.rate}-- {rating.count}
                 </p>
+                <div >
+                    <button className="description-button" onClick={()=>{setDesc(!desc)}}>Description</button>
+                </div>
+                {
+                    desc &&
+                    <p className="product-description">
+                    {description}
+                    </p>
+                }
+
+
             </div>
         </div>
     );

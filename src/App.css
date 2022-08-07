@@ -41,14 +41,14 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  border-top: 1.5px solid;
+  border-top: 2px solid;
   border-radius: 10px;
 }
 
 .product-category{
   align-self: center;
   width: fit-content;
-  padding: 3px;
+  padding: 5px;
   border-radius: 10px;
   background-color: red;
   color: wheat;
@@ -83,11 +83,22 @@
 .product-price{
   margin: 0;
   width: 30%;
-  margin-top: 0;
   font-family:'Times New Roman', Times, serif ;
   font-weight: bold;
 }
 .product-rating{
   width: 100%;
   border-radius: 10px;
+}
+
+.description-button{
+  background: burlywood;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+}
+.description-button:hover{
+  transition: 1s all ease-in-out ;
+  background: wheat;
 }
