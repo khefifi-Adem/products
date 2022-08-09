@@ -2,7 +2,6 @@ import {useState} from "react";
 
 function Product({ category, description, image, price, rating, title }) {
     const [desc, setDesc] = useState(false);
-    console.log(desc)
     return (
         <div className="product">
             <div className="img-container">

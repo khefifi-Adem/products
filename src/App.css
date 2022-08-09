@@ -1,9 +1,10 @@
 .App {
-  margin: 5%;
+  margin: 2%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .products{
@@ -11,19 +12,34 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 10%;
+  margin-top: 5%;
   width: 100%;
   border: solid 2px blanchedalmond;
   border-radius: 15px;
   min-height: 50vh;
+  background: #ededed;
 }
 
 .product{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 50px 10px;
   border-top: solid  gray;
   border-radius: 10px;
-  width: 30%;
+  width: 20%;
   height: auto;
+}
+
+.product:hover{
+  width: 20.5%;
+  transition: 1s all ease-in-out ;
+
+}
+
+.product div {
+  min-height: 70px;
 }
 
 .img-container{
@@ -101,4 +117,42 @@
 .description-button:hover{
   transition: 1s all ease-in-out ;
   background: wheat;
+  cursor: pointer;
 }
+
+.search-container{
+  width: 100%;
+}
+
+.search-form{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.search-bar{
+  width: 50%;
+  min-height: 28px;
+  border: 2.5px solid sandybrown;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+/*.search-button{*/
+/*  position: inherit;*/
+/*  width: 10%;*/
+/*  height: 28px;*/
+/*  background: sandybrown;*/
+/*  border: none;*/
+/*  border-radius: 12px;*/
+/*}*/
+/*.search-button:hover{*/
+/*  background: darkorange;*/
+/*  transition: 1.5s all ease-in-out ;*/
+/*  color: white;*/
+/*  cursor: pointer;*/
+
+/*}*/
+
